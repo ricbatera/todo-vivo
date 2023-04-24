@@ -1,0 +1,18 @@
+.titulo{
+    font-size: 2em;
+    text-align: center;
+    padding-top: 50px;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+app-lista-tarefas{
+    flex: 2;
+    margin-right: 15px;
+}
+app-nova-tarefa{
+    flex: 1;
+    margin-left: 15px;
+}
