@@ -1,0 +1,10 @@
+.campo-full{
+    width: 100%;
+}
+
+.largura{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

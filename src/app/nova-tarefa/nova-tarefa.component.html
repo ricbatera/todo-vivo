@@ -1,1 +1,9 @@
-<p>nova-tarefa works!</p>
+<p>Nova Tarefa</p>
+
+<div class="largura">
+    <mat-form-field class="campo-full">
+        <mat-label>Nome da Tarefa</mat-label>
+        <input matInput placeholder="escreva uma tarefa" [(ngModel)]="tarefa">
+    </mat-form-field>
+    <button (click)=novaTarefa() mat-raised-button color="primary" type="button">Criar Nova Tarefa</button>
+</div>
