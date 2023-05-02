@@ -18,7 +18,7 @@ export class DatabaseServiceService {
 
   // Headers
   httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    headers: new HttpHeaders({ 'Content-Type': 'application/json'})
   } 
 
   getAllTarefas(): Observable<Tarefa[]> {
@@ -27,7 +27,7 @@ export class DatabaseServiceService {
 
   novaTarefa(payload: Tarefa): Observable<Tarefa> {
     return this.httpClient.post<Tarefa>(`${this.API_URL}new`, JSON.stringify(payload), this.httpOptions)
-      .pipe(retry(2), catchError(this.handleError))
+      // .pipe(retry(2), catchError(this.handleError))
   }
 
   // Manipulação de erros
